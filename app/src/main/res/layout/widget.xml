@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:background="@drawable/esquinas_redondeadas"
+    android:padding="@dimen/widget_margin">
+    <Button
+        android:id="@+id/config"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mas"/>
+    <Button
+        android:id="@+id/anterior"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/atras"/>
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="245dp"
+        android:background="@drawable/proximo"/>
+    <TextView
+        android:id="@+id/fechayhora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Hora y fecha"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Dia1"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="60dp"
+        android:text="Dia2"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="170dp">
+
+    </ListView>
+
+</RelativeLayout>
