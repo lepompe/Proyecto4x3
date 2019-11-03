@@ -25,7 +25,7 @@
             android:background="@drawable/mas" />
 
         <TextView
-            android:id="@+id/fondo"
+            android:id="@+id/fondotext"
             android:layout_width="140dp"
             android:layout_height="43dp"
             android:layout_marginLeft="14dp"
