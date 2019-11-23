@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CambiosActivity"></activity>
+        <activity android:name=".MenuActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +28,6 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/vista4x3_notas_info" />
         </receiver>
-
         <receiver android:name=".Vista2x3">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

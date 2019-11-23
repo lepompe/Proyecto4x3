@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvColorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Texto"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnFondoText"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tvTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Tamaño"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp" />
+
+</FrameLayout>
