@@ -8,6 +8,7 @@ import android.widget.RemoteViews;
 /**
  * Implementation of App Widget functionality.
  */
+//Cambio para el push
 public class Widget extends AppWidgetProvider {
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
