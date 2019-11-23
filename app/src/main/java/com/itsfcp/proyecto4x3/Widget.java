@@ -3,7 +3,10 @@ package com.itsfcp.proyecto4x3;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
+import android.content.Intent;
 import android.widget.RemoteViews;
+
+import androidx.annotation.NonNull;
 
 /**
  * Implementation of App Widget functionality.
@@ -21,6 +24,10 @@ public class Widget extends AppWidgetProvider {
 
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);*/
+
+
+
+
     }
 
     @Override
@@ -40,5 +47,6 @@ public class Widget extends AppWidgetProvider {
     public void onDisabled(Context context) {
         // Enter relevant functionality for when the last widget is disabled
     }
+
 }
 
