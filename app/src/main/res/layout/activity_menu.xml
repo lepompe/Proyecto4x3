@@ -39,8 +39,8 @@
         android:id="@+id/idGrid2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="150dp"
         android:padding="4dp"
         app:columnCount="1"
         app:rowCount="1" >
@@ -58,6 +58,16 @@
             app:layout_rowWeight="1" >
             <TextView
                 android:id="@+id/tvColorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Texto"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/tvPorcenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -103,7 +113,7 @@
         android:padding="2dp"
         app:columnCount="1"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="350dp"
         app:rowCount="1">
 
         <androidx.cardview.widget.CardView
@@ -117,13 +127,6 @@
             app:layout_columnWeight="1"
             app:layout_rowWeight="1" >
 
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="310dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="95dp"  />
 
             <TextView
                 android:id="@+id/tvColor"
@@ -133,6 +136,17 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
                 android:text="Fondo"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtCargar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="170dp"
+                android:text="Porcentaje"
                 android:textColor="@android:color/black"
                 android:textSize="24sp" />
 
@@ -170,6 +184,14 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="140dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="310dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="95dp" />
         </androidx.cardview.widget.CardView>
 
     </androidx.gridlayout.widget.GridLayout>
