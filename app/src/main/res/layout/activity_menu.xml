@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondos"
+    android:background="@drawable/fondo2"
     tools:context=".MenuActivity">
 
+<!--
     <fragment
         android:id="@+id/fgFondo"
         android:name="com.itsfcp.proyecto4x3.FondoFragment"
@@ -32,6 +33,146 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.625" />
+-->
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/idGrid2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="200dp"
+        android:padding="4dp"
+        app:columnCount="1"
+        app:rowCount="1" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" >
+            <TextView
+                android:id="@+id/tvColorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Texto"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnFondoText"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tvTransText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="85dp"
+                android:text="Tamaño"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarText"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="135dp" />
+        </androidx.cardview.widget.CardView>
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/idGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        app:columnCount="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="400dp"
+        app:rowCount="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" >
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="310dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="95dp"  />
+
+            <TextView
+                android:id="@+id/tvColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Fondo"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnFondo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tvTrans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="90dp"
+                android:text="Transparencia"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+          <!--  <Switch
+                android:id="@+id/switch1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="290dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="95dp" />-->
+
+            <SeekBar
+                android:id="@+id/seekBarFondo"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="140dp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
 
     <Button
         android:id="@+id/button"
@@ -46,5 +187,6 @@
         app:layout_constraintVertical_bias="0.906"
         android:textColor="@drawable/txt_btn_dos"
         android:background="@drawable/btn_dos"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
